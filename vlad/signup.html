@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register: Create an account</title>
+    <link rel="icon" type="image/x-icon" href="./images/danone.png">
+    <style>
+        .brand{
+            font-size: xx-large;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            margin-left: 45%;
+        }
+        .signin{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 95%;
+            margin-left: 88.5%;
+        }
+        * { margin: 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="brand"><b>Goofy Inc.</b></a>
+            <span class="signin">Already a member? <a href="./login.html">Sign in</a></span>
+            <hr style="margin-top: 5px;">
+        </nav>
+    </header>
+    <main>
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="border: 2px solid black; margin-left: 35%; margin-right: 35%;">
+                <span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: xx-large; margin-left: 21.5%;"><b>Create an account</b></span>
+                <br>
+                <br>
+                <div>
+                    <form style="margin-left: 22.5%;">
+                        <input type="radio" id="personal" name="type-account" style="margin-left: 5.65%;">
+                        <label for="personal">Personal account</label>
+                        <input type="radio" id="business" name="type-account" style="margin-left: 10px;">
+                        <label for="business">Business account</label>
+                        <br>
+                        <br>
+                        <input type="text" name="first" id="first" required placeholder="First Name" style="width: 150px;">
+                        <input type="text" name="last" id="last" required placeholder="Last Name" style="width: 150px;">
+                        <br>
+                        <input type="text" name="username" id="username" required placeholder="Username" style="margin-top: 5px; width: 312px">
+                        <br>
+                        <input type="text" name="email" id="email" required placeholder="Email" style="width: 312px; margin-top: 5px;">
+                        <br>
+                        <input type="password" name="password" id="password" required placeholder="Password" style="width: 312px; margin-top: 5px;">
+                        <br>
+                        <input type="text" name="address" id="address" required placeholder="Address" style="width: 312px; margin-top: 5px;">
+                        <br>
+                        <input type="text" name="country" id="country" required placeholder="Country" style="margin-top: 5px; width: 150px;">
+                        <input type="text" name="zip" id="zip" required placeholder="Zip Code" style="margin-top: 5px; width: 150px;">
+                        <br>
+                        <label for="sex">Sex:</label>
+                        <select id="sex" name ="sex" required style="margin-top: 5px;">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="language" style="margin-left: 4px;">Language:</label>
+                        <input id="language" list="languages" name="language" required style="margin-top: 5px; width: 131px;">
+                        <datalist id="languages">
+                            <option value="English"></option>
+                            <option value="Dutch"></option>
+                        </datalist>
+                        <br>
+                        <textarea name="bio" rows="5" cols="50" placeholder="About/bio" style="margin-top: 5px; width: 314px"></textarea>
+                        <br>
+                        <input type="submit" value="Create account" style="margin-left: 22.5%; margin-top: 2px; margin-bottom: 5px;">  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

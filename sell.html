@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sell</title>
+    <meta name="description" content="List an item for sale">
+    <meta name="author" content="Gamer Inc.">
+
+    <meta property="og:title" content="E-commerce website">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Sell and buy commerce.">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #rest {
+            margin: auto;
+            padding-top: 5em;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 80%;
+        }
+
+        #sale-box>label {
+            margin: 1em;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        #sale-box {
+
+            box-shadow: 5px 10px;
+            text-align: center;
+            border-radius: 10px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            width: 30%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #sale {
+            margin: auto;
+            width: 40%;
+            border-radius: 4px;
+            padding: 0.5em;
+            border-color: gray;
+        }
+
+        #form-inner {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        #form-inner>input {
+            border-radius: 4px;
+            padding: 0.5em;
+            margin: 0.2em;
+        }
+
+        #form-inner>select {
+            border-radius: 4px;
+            padding: 0.5em;
+            margin: 0.2em;
+        }
+
+        #form-inner>textarea {
+            border-radius: 4px;
+            padding: 1em;
+            margin: 0.2em;
+            resize: none;
+        }
+
+        #form-inner>label {
+            text-align: left;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="top-bar">
+        <header><a href="./index.html" style="text-decoration: none; color: white;">Gamer Inc.</a></header>
+        <nav>
+            <div>
+                <a href="./sell.html">Sell</a>
+                <a href="./buy.html">Buy</a>
+                <a href="./login.html">Login</a>
+                <a href="./signup.html">Sign Up</a>
+            </div>
+        </nav>
+    </div>
+    <div id="rest">
+        <form action="" id="sale-box">
+            <label>
+                List product for sale
+            </label>
+
+            <div id="form-inner">
+                <label>Product Name</label>
+                <input name="product_name" required />
+                <label>Description</label>
+                <textarea name="description" required></textarea>
+                <label>Amount</label>
+                <input name="amount" type="number" required />
+                <label>Price</label>
+                <input name="price" type="price" required />
+                <label>Product Category</label>
+                <select id="category" name="category" required>
+                    <!-- <option value="all">All Categories</option> -->
+                    <option value="antique">Antiques</option>
+                    <option value="art">Art</option>
+                    <option value="baby">Baby</option>
+                    <option value="books">Books</option>
+                    <option value="business&industrial">Business & Industrial</option>
+                    <option value="cameras&photo">Cameras & Photo</option>
+                    <option value="cell_phones&acc">Cell Phones & Accessories</option>
+                    <option value="clothing&shoes&acc">Clothing, Shoes & Accessories</option>
+                    <option value="coins&paper_money">Coins & Paper Money</option>
+                    <option value="collectibles">Collectibles</option>
+                    <option value="computers&tablets&networking">Computers/Tablets & Networking</option>
+                    <option value="consumer_electro">Consumer Electronics</option>
+                    <option value="crafts">Crafts</option>
+                    <option value="dolls&bears">Dolls & Bears</option>
+                    <option value="dvd&movies">DVDs & Movies</option>
+                    <option value="entertainment_mem">Entertainment Memorabilia</option>
+                    <option value="gift_cards&coupons">Gift Cards & Coupons</option>
+                    <option value="health&beauty">Health & Beauty</option>
+                    <option value="home&garden">Home & Garden</option>
+                    <option value="jewelry&glass">Jewelry & Watches</option>
+                    <option value="music">Music</option>
+                    <option value="music_instr&gear">Musical Instruments & Gear</option>
+                    <option value="pet_supplies">Pet Supplies</option>
+                    <option value="pottery&glass">Pottery & Glass</option>
+                    <option value="real_estate">Real Estate</option>
+                    <option value="spec_services">Speciality Services</option>
+                    <option value="sport_goods">Sporting Goods</option>
+                    <option value="sports_mem&cards&fan_shop">Sports Mem, Cards & Fan Shop</option>
+                    <option value="stamps">Stamps</option>
+                    <option value="tickets&exp">Tickets & Experiences</option>
+                    <option value="toys&hobbies">Toys & Hobbies</option>
+                    <option value="travel">Travel</option>
+                    <option value="vgames&consoles">Video Games & Consoles</option>
+                    <option value="everything_else">Everything Else</option>
+                </select>
+            </div>
+            <input type="submit" value="List Product" id="sale" />
+
+        </form>
+    </div>
+
+</body>
+
+</html>
