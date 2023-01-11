@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buy</title>
+    <meta name="description" content="Search for products listed on Gamer Inc.">
+    <meta name="author" content="Gamer Inc.">
+
+    <meta property="og:title" content="E-commerce website">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Sell and buy commerce.">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #rest {
+            margin: auto;
+            padding-top: 5em;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 80%;
+        }
+
+        #search-box>label {
+            margin: 1em;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        #search-box {
+
+            box-shadow: 5px 10px;
+            text-align: center;
+            border-radius: 10px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            width: 30%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #search {
+            margin: auto;
+            width: 40%;
+            border-radius: 4px;
+            padding: 0.5em;
+            border-color: gray;
+        }
+
+        #form-inner {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        #form-inner>input {
+            border-radius: 4px;
+            padding: 0.5em;
+            margin: 0.2em;
+        }
+
+        #form-inner>select {
+            border-radius: 4px;
+            padding: 0.5em;
+            margin: 0.2em;
+        }
+
+        #form-inner>textarea {
+            border-radius: 4px;
+            padding: 1em;
+            margin: 0.2em;
+            resize: none;
+        }
+
+        #form-inner>label {
+            text-align: left;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="top-bar">
+        <header><a href="./index.html" style="text-decoration: none; color: white;">Gamer Inc.</a></header>
+        <nav>
+            <div>
+                <a href="./sell.html">Sell</a>
+                <a href="./buy.html">Buy</a>
+                <a href="./login.html">Login</a>
+                <a href="./signup.html">Sign Up</a>
+            </div>
+        </nav>
+    </div>
+    <div id="rest">
+        <form action="" id="search-box">
+            <label>
+                Advanced Search
+            </label>
+
+            <div id="form-inner">
+                <label>Keywords</label>
+                <input name="keyword" required>
+                <label>Category</label>
+                <input name="keyword" required>
+                <input type="submit" value="Search" id="search" />
+                <hr />
+                <label>Price</label>
+                <input type="radio"/>
+
+            </div>
+            <input type="submit" value="Search" id="search" />
+
+        </form>
+    </div>
+
+</body>
+
+</html>
