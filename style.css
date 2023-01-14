@@ -30,7 +30,7 @@ hr {
 #home-button {
     background-color: white;
 
-    position: absolute;
+    position: fixed;
 
     color: black;
     aspect-ratio: 1;
@@ -55,7 +55,7 @@ hr {
 #search-button {
     background-color: white;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 100%;
     color: black;
@@ -82,7 +82,7 @@ hr {
 #cart-button {
     background-color: white;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 100%;
     top: 100%;
