@@ -16,7 +16,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, rgb(148, 141, 141), var(--background));
+    background: linear-gradient(45deg, rgb(167, 76, 76), var(--highlight));
     background-size: 400% 400%;
 }
 
@@ -246,6 +246,8 @@ h3 {
     margin: 1rem;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 50px rgba(8, 7, 16, 0.6);
+    opacity: 0.55;
+    background-color: white;
     width: 60%;
     height: min(5rem, fit-content);
     border-radius: 4px;
