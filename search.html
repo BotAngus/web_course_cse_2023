@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,20 +17,14 @@
     </a>
     <div class="form-container">
         <form class="pretty-form" action="" method="post">
-            <h3>List Item for Sale</h3>
+            <h3>Search</h3>
             <div class="align-labels">
                 <div style="width: 100%; padding-left: 4rem;">
-                    <label>Product Name</label>
-                    <input name="product-name" placeholder="Product Name" required />
-                    <label>Description</label>
-                    <textarea name="description" required> </textarea>
-                    <label>Amount</label>
-                    <input name="amount" value="1" type="number" min=1 required />
-                    <label>Price</label>
-                    <input name="price" value="0" type="number" min=0 required />
+                    <label>Keywords</label>
+                    <input name="keywords" placeholder="Keywords" required />
                     <label>Category</labeL>
                     <select style="width: 80%;" id="category" name="category" required>
-                        <!-- <option value="all">All Categories</option> -->
+                        <option value="all">All Categories</option>
                         <option value="antique">Antiques</option>
                         <option value="art">Art</option>
                         <option value="baby">Baby</option>
@@ -68,9 +62,30 @@
                     </select>
                 </div>
             </div>
-
-            <input id="submit-button" value="Sell" type="submit" />
-
+            <hr />
+            <div style="width: 100%; padding-left: 4rem;">
+                <label>
+                    Price
+                </label>
+                <input name="price-from" placeholder="From" type="number" />
+                <label></label>
+                <input name="price-to" placeholder="To" type="number" />
+            </div>
+            <hr />
+            <div style="width: 100%; padding-left: 4rem;">
+                <label>
+                    Stars
+                </label>
+                <input name="star-from" placeholder="From" type="number" />
+                <label></label>
+                <input name="star-to" placeholder="To" type="number" />
+            </div>
+            <hr />
+            <div style="width: 100%; padding-left: 4rem;">
+                <label>From Supplier</label>
+                <input name="supplier" placeholder="Supplier Name" />
+            </div>
+            <input id="submit-button" value="Search" type="submit" />
 
         </form>
     </div>

@@ -8,18 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        html {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
 
-
-        #checkout {
-            margin: 5rem;
-            line-height: 0;
-            float: right;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            padding: 1rem;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 50px rgba(8, 7, 16, 0.6);
+        body::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
@@ -30,9 +27,18 @@
             <img src="./house.svg"></img>
         </div>
     </a>
-
+    <a href="./search.html">
+        <div id="search-button">
+            <img src="./search.svg"></img>
+        </div>
+    </a>
+    <a href="./cart.html">
+        <div id="cart-button">
+            <img src="./cart.svg"></img>
+        </div>
+    </a>
     <div id="shopping-cart">
-        <h3>Your Shopping Cart</h3>
+        <h3>Browse Items</h3>
         <div class="shopping-item">
             <img src="./cart.svg">
             <p>Item Name</p>
@@ -41,6 +47,11 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum."</p>
+            <div class="fancy-select">
+                <span style="color: whitesmoke;">0</span>
+                <span style="color: rgb(155, 33, 33)">-</span>
+                <span style="color: rgb(61, 170, 61);">+</span>
+            </div>
         </div>
         <div class="shopping-item">
             <img src="./cart.svg">
@@ -50,6 +61,11 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum."</p>
+            <div class="fancy-select">
+                <span style="color: whitesmoke;">0</span>
+                <span style="color: rgb(155, 33, 33)">-</span>
+                <span style="color: rgb(61, 170, 61);">+</span>
+            </div>
         </div>
         <div class="shopping-item">
             <img src="./cart.svg">
@@ -59,6 +75,11 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum."</p>
+            <div class="fancy-select">
+                <span style="color: whitesmoke;">0</span>
+                <span style="color: rgb(155, 33, 33)">-</span>
+                <span style="color: rgb(61, 170, 61);">+</span>
+            </div>
         </div>
         <div class="shopping-item">
             <img src="./cart.svg">
@@ -68,6 +89,11 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum."</p>
+            <div class="fancy-select">
+                <span style="color: whitesmoke;">0</span>
+                <span style="color: rgb(155, 33, 33)">-</span>
+                <span style="color: rgb(61, 170, 61);">+</span>
+            </div>
         </div>
         <div class="shopping-item">
             <img src="./cart.svg">
@@ -77,6 +103,11 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum."</p>
+            <div class="fancy-select">
+                <span style="color: whitesmoke;">0</span>
+                <span style="color: rgb(155, 33, 33)">-</span>
+                <span style="color: rgb(61, 170, 61);">+</span>
+            </div>
         </div>
         <div class="shopping-item">
             <img src="./cart.svg">
@@ -86,13 +117,12 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum."</p>
+            <div class="fancy-select">
+                <span style="color: whitesmoke;">0</span>
+                <span style="color: rgb(155, 33, 33)">-</span>
+                <span style="color: rgb(61, 170, 61);">+</span>
+            </div>
         </div>
-
-        <a id="checkout" href="./checkout.html">Checkout</a>
-    </div>
-
-
-
 </body>
 
 </html>

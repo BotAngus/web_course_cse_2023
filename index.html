@@ -1,159 +1,97 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Home</title>
-    <meta name="description" content="Homepage of Gamer Inc.">
-    <meta name="author" content="Gamer Inc.">
-
-    <meta property="og:title" content="E-commerce website">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Sell and buy commerce.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Inc.</title>
 
     <link rel="stylesheet" href="style.css">
-
     <style>
-        header {
-            color: white;
+        main {
+            height: 100%;
             width: 100%;
-            font-size: 2em;
-            text-align: center;
-            padding-bottom: 0.5em;
-        }
-
-        nav>div>a {
-            text-decoration: none;
-            color: white;
-            transition: all .2s ease-in-out;
-        }
-
-        nav>div>a:hover {
-            transition: ease;
-            color: whitesmoke;
-            transform: scale(1.3);
-        }
-
-        #top-bar {
-            background-color: black;
-            width: 100%;
-            height: 8%;
-            padding: 1em;
-        }
-
-        #rest {
-            margin: auto;
-            padding-top: 5em;
             display: flex;
             justify-content: center;
-            width: 100%;
-            height: 80%;
+            align-items: center;
+            flex-direction: column;
+            animation: fadeIn 2s;
         }
 
-        #searchbox>label {
-            font-size: 1.5rem;
+        main>header {
+            width: 50%;
             text-align: center;
+            font-size: 5rem;
+            font-weight: bold;
+            font-style: italic;
         }
 
-        #searchbox {
-            box-shadow: 5px 10px;
-            text-align: center;
-            border-radius: 10px;
-            border-width: 2px;
-            border-color: black;
-            border-style: solid;
-            width: 30%;
-            height: 40%;
+        #partial-nav {
+            width: max(20%, 400px);
             display: flex;
             flex-direction: column;
+            /* justify-content: space-between; */
         }
 
-        #product-search-box {
-            margin: auto;
-            width: 40%;
-            border-radius: 4px;
-            padding: 0.5em;
-            border-color: gray;
+        #partial-nav div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
 
-        #category {
-            width: 40%;
-            border-radius: 4px;
-            padding: 0.5em;
-            border-color: gray;
+        #partial-nav a {
+            color: black;
+            font-style: italic;
+            transition: transform 0.2s ease-in-out;
         }
 
-        #to-search {
-            margin: auto;
-            width: 40%;
-            border-radius: 4px;
-            padding: 0.5em;
-            border-color: gray;
+        #partial-nav a:hover {
+            color: white;
+            font-style: italic;
+            transform: scale(1.1);
+        }
+
+
+        #partial-nav a:hover span.double-arrow::after {
+            transform: translateX(-100%);
+            position: absolute;
+            content: "»";
+            color: white;
+            font-style: italic;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0%);
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="top-bar">
-        <header>Gamer Inc.</header>
-        <nav>
-            <div>
-                <a href="./sell.html">Sell</a>
-                <a href="./buy.html">Buy</a>
-                <a href="./login.html">Login</a>
-                <a href="./signup.html">Sign Up</a>
+    <main>
+        <header><span style="color:whitesmoke">Gamer Inc.</span></header>
+        <div id="partial-nav">
+            <div id="first-row"> <a href="./browse.html"><span class="double-arrow"></span>Browse</a>
+                <a href="./sell.html"><span class="double-arrow"></span>Sell</a>
+                <a href="./search.html"><span class="double-arrow"></span>Search</a>
             </div>
-        </nav>
-    </div>
-    <div id="rest">
-        <form action="" id="searchbox">
-            <label>
-                What are you looking for?
-            </label>
-            <div style="display: flex; flex-direction: row; margin: auto">
-                <input type="text" placeholder="Search for a product" id="product-search-box" required>
-                <select id="category" name="category" required>
-                    <option value="all">All Categories</option>
-                    <option value="antique">Antiques</option>
-                    <option value="art">Art</option>
-                    <option value="baby">Baby</option>
-                    <option value="books">Books</option>
-                    <option value="business&industrial">Business & Industrial</option>
-                    <option value="cameras&photo">Cameras & Photo</option>
-                    <option value="cell_phones&acc">Cell Phones & Accessories</option>
-                    <option value="clothing&shoes&acc">Clothing, Shoes & Accessories</option>
-                    <option value="coins&paper_money">Coins & Paper Money</option>
-                    <option value="collectibles">Collectibles</option>
-                    <option value="computers&tablets&networking">Computers/Tablets & Networking</option>
-                    <option value="consumer_electro">Consumer Electronics</option>
-                    <option value="crafts">Crafts</option>
-                    <option value="dolls&bears">Dolls & Bears</option>
-                    <option value="dvd&movies">DVDs & Movies</option>
-                    <option value="entertainment_mem">Entertainment Memorabilia</option>
-                    <option value="gift_cards&coupons">Gift Cards & Coupons</option>
-                    <option value="health&beauty">Health & Beauty</option>
-                    <option value="home&garden">Home & Garden</option>
-                    <option value="jewelry&glass">Jewelry & Watches</option>
-                    <option value="music">Music</option>
-                    <option value="music_instr&gear">Musical Instruments & Gear</option>
-                    <option value="pet_supplies">Pet Supplies</option>
-                    <option value="pottery&glass">Pottery & Glass</option>
-                    <option value="real_estate">Real Estate</option>
-                    <option value="spec_services">Speciality Services</option>
-                    <option value="sport_goods">Sporting Goods</option>
-                    <option value="sports_mem&cards&fan_shop">Sports Mem, Cards & Fan Shop</option>
-                    <option value="stamps">Stamps</option>
-                    <option value="tickets&exp">Tickets & Experiences</option>
-                    <option value="toys&hobbies">Toys & Hobbies</option>
-                    <option value="travel">Travel</option>
-                    <option value="vgames&consoles">Video Games & Consoles</option>
-                    <option value="everything_else">Everything Else</option>
-                </select>
+            <div id="second-row">
+                <a href="./login.html"><span class="double-arrow"></span>Login</a>
+                <a href="./signup.html"><span class="double-arrow"></span>Sign Up</a>
             </div>
-            <input type="submit" value="Search" id="to-search" />
-        </form>
-    </div>
+
+        </div>
+    </main>
+
 </body>
 
 </html>
