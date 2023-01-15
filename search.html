@@ -20,9 +20,9 @@
             <h3>Search</h3>
             <div class="align-labels">
                 <div style="width: 100%; padding-left: 4rem;">
-                    <label>Keywords</label>
-                    <input name="keywords" placeholder="Keywords" required />
-                    <label>Category</labeL>
+                    <label for="keywords">Keywords</label>
+                    <input id="keywords" name="keywords" placeholder="Keywords" required />
+                    <label for="category">Category</label>
                     <select style="width: 80%;" id="category" name="category" required>
                         <option value="all">All Categories</option>
                         <option value="antique">Antiques</option>
@@ -64,26 +64,26 @@
             </div>
             <hr />
             <div style="width: 100%; padding-left: 4rem;">
-                <label>
-                    Price
+                <label for="price-from">
+                    Price Range
                 </label>
-                <input name="price-from" placeholder="From" type="number" />
+                <input id="price-from" name="price-from" placeholder="From" type="number" min="0"/>
                 <label></label>
-                <input name="price-to" placeholder="To" type="number" />
+                <input name="price-to" placeholder="To" type="number" min="0"/>
             </div>
             <hr />
             <div style="width: 100%; padding-left: 4rem;">
-                <label>
-                    Stars
+                <label for="star-from">
+                    Star Range
                 </label>
-                <input name="star-from" placeholder="From" type="number" />
+                <input id="star-from" name="star-from" placeholder="From" type="number" min="0"/>
                 <label></label>
-                <input name="star-to" placeholder="To" type="number" />
+                <input name="star-to" placeholder="To" type="number" min="0"/>
             </div>
             <hr />
             <div style="width: 100%; padding-left: 4rem;">
-                <label>From Supplier</label>
-                <input name="supplier" placeholder="Supplier Name" />
+                <label for="supplier">From Supplier</label>
+                <input id="supplier" name="supplier" placeholder="Supplier Name" />
             </div>
             <input id="submit-button" value="Search" type="submit" />
 

@@ -25,51 +25,51 @@
             <div class="align-labels">
                 <div class="side-by-side">
                     <div>
-                        <label>Username</label>
-                        <input name="username" placeholder="Username" required />
+                        <label for="username">Username</label>
+                        <input id="username" name="username" placeholder="Username" required />
                     </div>
                     <div>
-                        <label>Password</label>
-                        <input name="password" placeholder="Password" type="password" required />
+                        <label for="password">Password</label>
+                        <input id="password" name="password" placeholder="Password" type="password" required />
                     </div>
                     <div>
-                        <label>Name</label>
-                        <input name="name" placeholder="Name" required />
+                        <label for="name">Name</label>
+                        <input id="name" name="name" placeholder="Name" required />
                     </div>
                 </div>
                 <hr>
                 <div class="side-by-side">
                     <div>
-                        <label>
+                        <label for="address">
                             Address
                         </label>
-                        <input name="address" placeholder="Address" required />
+                        <input id="address" name="address" placeholder="Address" required />
                     </div>
                     <div>
-                        <label>Country</label>
-                        <input name="country" placeholder="Country" required />
+                        <label for="country">Country</label>
+                        <input id="country" name="country" placeholder="Country" required />
                     </div>
                     <div>
-                        <label>ZIP Code</label>
-                        <input name="zipcode" placeholder="ZIP Code" required />
+                        <label for="zipcode">ZIP Code</label>
+                        <input id="zipcode" name="zipcode" placeholder="ZIP Code" required />
                     </div>
                 </div>
                 <hr />
                 <div style="width: 80%;">
-                    <label>E-mail</label>
-                    <input name="email" placeholder="E-mail" required />
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" placeholder="E-mail" required />
 
-                    <label>Sex</label>
-                    <select name="sex">
-                        <option value="man">Man</option>
-                        <option value="woman">Woman</option>
+                    <label for="sex">Sex</label>
+                    <select id="sex" name="sex" required>
+                        <option value="man">Male</option>
+                        <option value="woman">Female</option>
                         <option value="other">Other</option>
                         <option value="unknown">Prefer not to say</option>
                     </select>
-                    <label>Language</label>
-                    <input name="language" placeholder="Language" />
-                    <label>About/Bio</label>
-                    <textarea name="bio"></textarea>
+                    <label for="language">Language</label>
+                    <input id="language" name="language" placeholder="Language" required/>
+                    <label for="bio">About/Bio</label>
+                    <textarea id="bio" name="bio" required></textarea>
                 </div>
             </div>
             <input id="submit-button" value="Sign Up" type="submit" />
